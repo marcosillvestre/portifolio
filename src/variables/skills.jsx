@@ -18,6 +18,7 @@ const skills = [
         img: javascript
     },
     {
+        
         name: 'Css',
         img: css
     },
