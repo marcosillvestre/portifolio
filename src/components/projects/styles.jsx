@@ -8,7 +8,7 @@ color: #fff;
 align-items: center;
 gap: 50px;
 padding: 5rem 0;
-span{
+label{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,10 +17,26 @@ span{
     gap: 10px;
     border: 2px solid #9758a6;
     border-radius: 5px;
-    height: 17rem;
+    height: 30rem;
 
     h1,a {
         text-align: center;
+        position: relative;
+    }
+    img{
+        border-radius: 10px;
+        transition: 500ms;
+
+    @media(min-width: 860px){
+    &:active{
+        scale:.6;
+        top: 0;
+        left: 10%;
+        right: 50%;
+        position: absolute;
+        z-index: 2;
+    }
+}
     }
 
     }

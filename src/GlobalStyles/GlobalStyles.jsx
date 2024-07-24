@@ -63,12 +63,23 @@ svg{
     position: absolute;
     right: -40px;
     height: 5rem;
+    transition: 3s;
+}
+&:active{
+    svg{
+        right: -1000rem;
+    }
 }
 
+&:hover{
+background-color: #69676784;
+
+}
 @media (max-width: 760px){
 width: 75%;
 }
 }
+
 
 .dev{
     color: #9758a6;

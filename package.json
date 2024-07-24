@@ -17,6 +17,7 @@
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.176",
     "aos": "^2.3.4",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.11"

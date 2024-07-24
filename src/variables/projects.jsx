@@ -1,25 +1,33 @@
+
+import dispat from '../assets/dispat.png'
+import lp from '../assets/lp.png'
+import valid from '../assets/valid.png'
 const Projects = [
     {
-        name: 'Validation School',
+        name: 'School Validator',
+        img: valid,
         description: 'Sistema hoje utilizado por uma equipe de pelo menos 15-20 pessoas. Obedecendo os padrões mais atuais de arquitetura do mercado foi possível entregar um sistema com facilidade para manutenção e eficiente na entrega de resultados.',
         link: 'https://controlecomercial.vercel.app'
     },
     {
-        name: 'Code Burguer',
-        description: 'Este é um projeto de uma simulação de pedidos de uma hamburgueria que é completamente funcional e serve como expêriencia de Ecommerce.',
-        link: 'https://github.com/marcosillvestre/codeBurguer-fe'
-
-    },
-    {
-        name: 'Back-end do Code Burguer',
+        name: 'Back-end School Validator',
+        img: valid,
         description: 'Este é o projeto complementar ao anterior onde eu utilizei NodeJs para lidar com banco de dados e fazer o controle de dados.',
-        link: 'https://github.com/marcosillvestre/Back-endCodeBurguer'
+        link: 'https://github.com/marcosillvestre/comericialADM'
 
     },
     {
-        name: 'SQL server',
-        description: 'Este é um Back-end de uma simulação de loja de jogos onde você pode criar, editar e apagar dados. Foram utilizados Nodejs e PostgresSQL para realizar esse projeto.',
-        link: 'https://github.com/marcosillvestre/Crud-PostgresSQL'
+        name: 'Landing Page',
+        img: lp,
+        description: 'Esta é uma landing-page para o lançamento de um ebook de uma escola de idiomas da minha cidade.',
+        link: 'https://landing-page-american-way.vercel.app/'
+
+    },
+    {
+        name: 'Dispatcher',
+        img: dispat,
+        description: 'Este é um Back-end de um sistema que tem como objetivo automatizar o processo de criação de boletos via banco inter.',
+        link: 'https://github.com/marcosillvestre/dispatcherCentro'
     },
 ]
 
