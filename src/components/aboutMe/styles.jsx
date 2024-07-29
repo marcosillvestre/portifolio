@@ -31,7 +31,7 @@ justify-content: space-around;
     .container{
     width: 100%;
     font-size: medium;
-    text-align: justify;
+    text-align: start;
     }
 }
 

@@ -1,17 +1,64 @@
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import styled from "styled-components";
 
+export const ArroWDown = styled(ArrowDownwardIcon)`
+cursor: pointer;
+transform: ${props => props.active ? "rotate(180deg)" : ""};
 
-export const Container = styled.header`
+`
+
+export const BoxHeader = styled.header`
+display: flex;
+flex-direction: column;
+width: 100dvw;
+position: fixed;
+
+.handler {
+    display: none;
+    background-color: #181616;
+    padding: 10px ;
+    
+}
+.opener{
+    background: none;
+    width: 100%;
+    border: none;
+}
+
+.disabled{
+    display: none;
+}
+
+@media(max-width: 790px){
+    .handler{
+        display: ${props => props.visible ? "flex" : "none"};
+        flex-direction: column;
+        align-items: center;
+
+        .outClick{
+            position: absolute;
+            top:0;
+            width: 100dvw;
+            height: ${props => props.active ? "100dvh" : "0px"};
+            opacity: 0;
+            z-index: 10;
+}
+    }
+}
+`
+
+export const Container = styled.nav`
+
 display: flex;
 justify-content: space-between;
+width: 100%;
+
 z-index: 12;
-width: 100vw;
 background-color: #131212;
 color: #fff;
 overflow: hidden;
 padding: 1rem 3rem ;
-position: fixed;
-opacity: .9;
+/* opacity: .9; */
 .header{
     display: flex;
     gap: 20px;
@@ -109,6 +156,16 @@ display:flex;
 gap: 50px;
 align-items: center;
 justify-content: end; 
+transition-duration: 200ms;
+@media (max-width: 760px){
+        z-index: 20000;
+        visibility: ${props => props.active ? "visible" : "hidden"};
+        height: ${props => props.active ? "max-content" : "0px"};
+        margin: ${props => props.active ? "20px auto" : "0px"};
 
 
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1.4rem;
+    }
 `

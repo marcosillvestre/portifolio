@@ -13,7 +13,7 @@ export function AboutMe() {
             <About id="About" data-aos='fade-up'>
 
                 <div className='container'>
-                    <p >
+                    <div >
                         Trabalho como Desenvolvedor Full Stack PJ há {timer} ano{timer > 1 && 's'}.
 
                         Hoje estou especializado em <p className='dev'>Javascript</p>, <p className='dev'>Node</p> e <p className='dev'>React</p>, mas tenho experiência em diversas tecnologias e ferramentas, incluindo <p className='dev'>PostgreSQL</p>, <p className='dev'>MySQL</p>, <p className='dev'>Docker</p>, <p className='dev'>Git</p> e <p className='dev'>Github</p>.
@@ -24,7 +24,7 @@ export function AboutMe() {
                         Sou capaz de desenvolver soluções para problemas complexos, revisar e projetar códigos eficientes e escaláveis. Além disso foco em princípios como SOLID, Clean Code e convenções de commit para garantir que o código seja de alta qualidade.
                         <br />
                         Sinta-se a vontade para entrar em contato comigo
-                    </p>
+                    </div>
 
                     <Skills >
                         <ul>
