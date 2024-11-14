@@ -4,18 +4,12 @@ import lp from '../assets/lp.png'
 import valid from '../assets/valid.png'
 const Projects = [
     {
-        name: 'School Validator',
+        name: 'CCRM',
         img: valid,
         description: 'Sistema hoje utilizado por uma equipe de pelo menos 15-20 pessoas. Obedecendo os padrões mais atuais de arquitetura do mercado foi possível entregar um sistema com facilidade para manutenção e eficiente na entrega de resultados.',
         link: 'https://controlecomercial.vercel.app'
     },
-    {
-        name: 'Back-end School Validator',
-        img: valid,
-        description: 'Este é o projeto complementar ao anterior onde eu utilizei NodeJs para lidar com banco de dados e fazer o controle de dados.',
-        link: 'https://github.com/marcosillvestre/comericialADM'
 
-    },
     {
         name: 'Landing Page',
         img: lp,
@@ -28,7 +22,7 @@ const Projects = [
         img: dispat,
         description: 'Este é um Back-end de um sistema que tem como objetivo automatizar o processo de criação de boletos via banco inter.',
         link: 'https://github.com/marcosillvestre/dispatcherCentro'
-    },
+    }
 ]
 
 export default Projects

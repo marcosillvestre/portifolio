@@ -46,13 +46,12 @@ color: transparent;
 }
 
 .button{
+
 background-color: #4b48482a;
-padding: 2rem;
 border-radius: 10px;
 border: 1px solid #69676784;
 font-size: 1.5rem;
 color: #fff;
-width: 35rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -63,16 +62,16 @@ svg{
     position: absolute;
     right: -40px;
     height: 5rem;
-    transition: 3s;
+    transition: 1s;
 }
 &:active{
-    svg{
-        right: -1000rem;
-    }
 }
 
 &:hover{
-background-color: #69676784;
+    background-color: #69676784;
+    svg{
+        right: -10rem;
+    }
 
 }
 @media (max-width: 760px){

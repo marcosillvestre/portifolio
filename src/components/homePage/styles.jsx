@@ -8,6 +8,11 @@ height: 100dvh;
 padding: 0 3rem;
 gap:1rem;
 
+a{
+        padding: 2rem;
+    width: 35rem;
+}
+
 @media (max-width: 760px){
 padding: 0;
 flex-direction: column;
@@ -18,6 +23,15 @@ gap: 2rem;
 
 `
 
+
+
+export const ContainerButtons = styled.span`
+    display: grid;
+    gap: 2rem;
+    button{
+
+    }
+`
 export const Button = styled.button`
 
 `
@@ -30,20 +44,4 @@ color: #fff;
 white-space: nowrap;
 
 
-
-
-@media (max-width: 920px){
-
-.dev{
-    /* font-size: 1.2rem; */
-}
-@keyframes typing {
-    from{
-    width: 0;
-    }
-    to{
-    width: 21.2rem;
-    }
-}
-}
 `
