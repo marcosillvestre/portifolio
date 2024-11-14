@@ -17,14 +17,6 @@ justify-content: center;
 align-items: center;
 gap: 2rem;
 
-span{
-    width: 100%;
-    padding: 5rem;
-
-}
-a{
-    width: 100%;
-}
 }
 
 `
@@ -47,6 +39,15 @@ export const ContainerButtons = styled.span`
 
         }
             }
+
+@media (max-width: 760px){
+    width: 100%;
+    padding: 3rem;
+a, .curriculum{
+    text-align: center;
+    width: 100%;
+}
+}
 `
 export const Button = styled.button`
 

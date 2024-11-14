@@ -53,6 +53,5 @@ gap: 20px;
 
 .blank-anchor{
     padding: 2rem;
-    width: 35rem;
 }
 `
