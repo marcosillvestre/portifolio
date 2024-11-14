@@ -13,6 +13,7 @@ flex-direction: column;
 width: 100dvw;
 position: fixed;
 z-index: 1;
+
 .handler {
     display: none;
     background-color: #181616;

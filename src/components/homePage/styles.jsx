@@ -8,29 +8,45 @@ height: 100dvh;
 padding: 0 3rem;
 gap:1rem;
 
-a{
-        padding: 2rem;
-    width: 35rem;
-}
+
+    cursor:${props => props.load ? "wait" : ""} ;
 
 @media (max-width: 760px){
 padding: 0;
-flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 2rem;
+
+span{
+    width: 100%;
+    padding: 5rem;
+
+}
+a{
+    width: 100%;
+}
 }
 
 `
 
-
-
 export const ContainerButtons = styled.span`
-    display: grid;
-    gap: 2rem;
-    button{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    }
+    .curriculum{
+        color: #fff;
+        border: 1px dashed  rgba(105, 103, 103, 0.518);
+        padding: 1rem;
+        width: max-content;
+        font-size: .8rem;
+
+        &:hover{
+            border:  1px solid #fff;
+        background-color: rgba(105, 103, 103, 0.518);
+
+        }
+            }
 `
 export const Button = styled.button`
 

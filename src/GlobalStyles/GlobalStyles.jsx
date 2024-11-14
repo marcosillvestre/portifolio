@@ -9,6 +9,7 @@ font-family: 'Mulish', sans-serif;
 outline: none;
 scroll-behavior: smooth;
 
+
 .title{
 text-align:center;
 font-size: 110px;
@@ -57,7 +58,8 @@ justify-content: center;
 align-items: center;
 text-align: center;
 position: relative;
-
+   padding: 2rem;
+    width: 35rem;
 svg{
     position: absolute;
     right: -40px;

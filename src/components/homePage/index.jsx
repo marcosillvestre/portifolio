@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Container, ContainerButtons, Text } from "./styles";
 export function Section() {
+    const [load, setLoad] = useState(false)
 
+    function downloadCurr() {
+        setLoad(true)
+
+
+        const anchor = document.getElementById("curriculum")
+        anchor.href = "../../../public/marcosillvestre.pdf"
+
+        setTimeout(() => {
+
+            anchor.download = "curriculo marcos silvestre"
+            setLoad(false)
+        }, 5000);
+    }
 
     return (
-        <Container >
+        <Container load={load}>
             <Text>
                 Olá, sou o Marcos, <br />
                 sou <p className="dev">Desenvolvedor Fullstack</p>
@@ -31,12 +45,13 @@ export function Section() {
                 </a>
 
                 <a
-                    href="../../../public/marcosillvestre.pdf"
-                    download={true}
-                    className='button'
-
+                    // href="../../../public/marcosillvestre.pdf"
+                    // download={true}
+                    className='curriculum'
+                    id="curriculum"
+                    onClick={() => downloadCurr()}
                 >
-                    currículo
+                    meu melhor currículo
                 </a>
             </ContainerButtons>
 
