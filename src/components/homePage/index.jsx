@@ -18,6 +18,8 @@ export function Section() {
         }, 5000);
     }
 
+
+
     return (
         <Container load={load}>
             <Text>
@@ -44,15 +46,27 @@ export function Section() {
                     </svg>
                 </a>
 
-                <a
-                    // href="../../../public/marcosillvestre.pdf"
-                    // download={true}
-                    className='curriculum'
-                    id="curriculum"
-                    onClick={() => downloadCurr()}
-                >
-                    meu melhor currículo
-                </a>
+                {
+                    window.innerWidth > 768 ?
+                        <a
+                            // href="../../../public/marcosillvestre.pdf"
+                            // download={true}
+                            className='curriculum'
+                            id="curriculum"
+                            onClick={() => downloadCurr()}
+                        >
+                            meu melhor currículo
+                        </a> :
+                        <a
+                            href="../../../public/marcosillvestre.pdf"
+                            download={true}
+                            className='curriculum'
+                        >
+                            meu melhor currículo
+                        </a>
+
+
+                }
             </ContainerButtons>
 
 
