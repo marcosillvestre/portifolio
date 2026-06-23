@@ -49,8 +49,8 @@ export function Section() {
                 {
                     window.innerWidth > 768 ?
                         <a
-                            // href="../../../public/marcosillvestre.pdf"
-                            // download={true}
+                            href="../../../public/marcosillvestre.pdf"
+                            download={true}
                             className='curriculum'
                             id="curriculum"
                             onClick={() => downloadCurr()}

@@ -62,7 +62,7 @@ export function Header() {
                             Contact.map(cont => (
                                 <span key={cont.name}>
 
-                                    <a href={cont.link} >
+                                    <a href={cont.link} target="_blank">
                                         <img src={cont.icon} />
                                     </a>
                                 </span>

@@ -11,7 +11,7 @@ const Contact = [
     },
     {
         icon: email,
-        link: "mailto:marcos.vinicius7170@gmail.com",
+        link: "https://mail.google.com/mail/?view=cm&fs=1&to=marcosillvestre.dev@email.com&subject=Contato&body=Olá Marcos, gostaria de falar com você.",
         name: 'Email'
     },
     {
